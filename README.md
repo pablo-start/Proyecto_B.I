@@ -24,3 +24,12 @@ Entraremos a la carpeta de XAMPP una vez ahí entraremos a la carpeta "apache" p
   </Directory>
 </VirtualHost>
 ```
+
+Entramos a la siguiente liga en nuestro equipo 
+```bash
+C:\Windows\System32\drivers\etc # abres el archivo 'hosts'
+```
+```bash
+127.0.0.1 example2.com ##agregas esta linea al archivo
+```
+
