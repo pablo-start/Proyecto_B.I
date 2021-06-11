@@ -3,21 +3,13 @@ SISTEMA ABCC BASES DE INGENIERIA
 ## Configuración
 Entraremos a la carpeta de XAMPP una vez ahí entraremos a la carpeta "apache" posteriormente entraremos a la carpeta "conf"  entraremos a la carpeta "extra" y modificaremos el archivo  httpd-vhosts
 ```bash
-##<VirtualHost *:80>
-    ##ServerAdmin webmaster@dummy-host2.example2.com
-    ##DocumentRoot "C:/xampp/htdocs/dummy-host2.example2.com"
-    ##ServerName dummy-host2.example2.com
-    ##ErrorLog "logs/dummy-host2.example2.com-error.log"
-    ##CustomLog "logs/dummy-host2.example2.com-access.log" common
-##</VirtualHost>
-
 <VirtualHost *:80>
-    ServerAdmin example2.com
+    ServerAdmin +nombre de la carpeta+.com
     DocumentRoot "C:/xampp/htdocs/+nombre de la carpeta+.com/public"
-    ServerName example2.com
+    ServerName +nombre de la carpeta+.com
     ErrorLog "logs/+nombre de la carpeta+.com-error.log"
     CustomLog "logs/+nombre de la carpeta+.com-access.log" common
-    <Directory "C:/xampp/htdocs/example2.com/public">
+    <Directory "C:/xampp/htdocs/+nombre de la carpeta+.com/public">
    Options All
    AllowOverride All
    Require all granted
